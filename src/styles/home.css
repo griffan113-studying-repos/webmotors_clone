@@ -1,0 +1,77 @@
+main > section:first-child {
+  color: #f1f1f1;
+  padding: 15% 10%;
+  background-image: url("../assets/home_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main > section > h1 {
+  font-size: 3rem;
+}
+
+main > section > span {
+  font-size: 1.2rem;
+}
+
+main > section > h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+section.vehicles_container {
+  padding: 10%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+section.vehicles_container > a {
+  color: #2e2e37;
+  -webkit-box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  max-width: 250px;
+  transition: 200ms all;
+
+  display: flex;
+  flex-direction: column;
+}
+
+section.vehicles_container > a:hover {
+  transform: scale(1.05);
+}
+
+section.vehicles_container > a > img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+section.vehicles_container > a > strong,
+section.vehicles_container > a > span {
+  padding: 10px;
+}
+
+strong.price {
+  margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+  main > section > h1 {
+    font-size: 2rem;
+  }
+
+  main > section > span {
+    font-size: 1rem;
+  }
+
+  section.vehicles_container {
+    flex-direction: column;
+  }
+
+  a + a {
+    margin-top: 50px;
+  }
+}
